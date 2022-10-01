@@ -1,0 +1,28 @@
+@import '../../scss/variables.scss';
+.pagiBox {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .pagiNumber{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 2.5rem;
+        height: 2.5rem;
+        text-align: center;
+        padding: 0 .5rem;
+        border: 1px solid $third-color;
+        border-radius: 50%;
+        margin: 0.5rem;
+        &:hover{
+            background-color: $third-color;
+            color: $back-color;
+            cursor: pointer;
+        }
+    }
+    .active {
+       font-weight: 800;
+       
+    }
+}

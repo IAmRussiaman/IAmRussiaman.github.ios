@@ -1,0 +1,22 @@
+@import './variables.scss';
+
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+  
+}
+body{
+    background-color:#334257;
+}
+.wrapper {
+    width: 75%;
+    
+    margin: 0 auto;
+    border-radius: 10px;
+    background-color: $back-color;
+   margin-top: 10px;
+   font-family: 'Fira Sans', sans-serif;
+}

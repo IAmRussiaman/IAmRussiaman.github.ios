@@ -1,0 +1,37 @@
+@import '../../../scss/variables.scss';
+.sort {
+    width: 40%;
+    display: flex;
+    flex-direction: row-reverse;
+    position: relative;
+    
+    .selected {
+        font-weight: bold;
+        color: $third-color;
+        cursor: pointer;
+        width: 10rem;
+    }
+}
+.popup{
+    position: absolute;
+    right: 0;     
+    margin-top: 2rem;
+    
+    ul{
+       list-style-type: none;
+       background-color: white;
+        li{
+            margin-bottom: 0.5rem;
+            padding: 0.2rem;
+            &.active {
+                font-weight: 700;
+                color: $third-color;
+            }
+            &:hover {
+                cursor: pointer;
+                color: $third-color;
+                font-weight: 600;
+            }
+        }
+    }
+}

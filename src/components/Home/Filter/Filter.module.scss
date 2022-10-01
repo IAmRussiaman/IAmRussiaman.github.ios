@@ -1,0 +1,26 @@
+@import '../../../scss/variables.scss';
+.filter {
+    width: calc(100% - (40% + 2rem));
+    margin-right: 1rem;
+    display: flex;
+    align-items: center;
+    .filterBox {
+        font-weight: 700;
+        font-size: 0.9rem;
+        padding: 0.5rem 1rem;
+        margin-right: 1rem;
+        border-radius: 10px;
+        text-align: center;
+        background-color: $second-color;
+        &:hover {
+            color: $back-color;
+            background-color: $third-color;
+            cursor: pointer;
+        }
+        .active {
+            color: $back-color;
+            
+            
+        }
+    }
+}

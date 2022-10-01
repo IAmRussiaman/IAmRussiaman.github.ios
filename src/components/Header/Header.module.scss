@@ -1,0 +1,72 @@
+@import '../../scss/variables.scss';
+.headerContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 10px;
+    color: $font-primary;
+    border-bottom: 2px solid $second-color;
+    padding: 1rem;
+    
+    .search {
+        display: flex;
+        justify-content: center;
+        align-items: center;     
+        input {
+            background: transparent;
+           
+            border:none;
+            border-bottom: 1px solid $third-color;
+            color: $font-primary;
+            padding: 0.5rem;
+            font-size:1rem;
+            width: 80%;
+            font-family: 'Aboreto', cursive;
+            transition: width 1s ease;
+            &:focus{
+                outline: none !important;
+                border-bottom: 2px solid $font-primary;
+                width: 110%;
+                color: $font-primary;
+            }        
+        }
+    span {
+        cursor: pointer;
+    }
+    }
+    .logo{
+    display: flex;
+    align-items: center;
+        img{
+            width: 6rem;
+            height:6rem;
+        }
+        span {
+            font-size: 1.5rem;
+            font-weight: 800;           
+        }
+    }
+    .cartInfo{
+        display: flex;
+        justify-content:flex-end;
+        align-items: center;
+       
+        margin-left: 12rem;
+        margin-right: 1rem;
+        .cartImg{
+            img{
+            width: 3rem;
+            height: 3rem;
+                
+        }
+        }
+        .cartNumber{
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-left: 1rem;
+            &:hover{
+                color: $third-color;
+            }
+        }
+    }
+} 
