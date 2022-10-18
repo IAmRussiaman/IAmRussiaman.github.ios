@@ -2,7 +2,7 @@ import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { addItem } from '../../../redux/cartSlice'
 import s from './PerfumeBlock.module.scss'
-
+import { Link } from 'react-router-dom'
 const PerfumeBlock = (props) => {
     const cartItem = useSelector(state => state.cart.items.find(obj => obj.id === props.id))
     const dispatch = useDispatch()
@@ -11,9 +11,9 @@ const PerfumeBlock = (props) => {
    
     return (
     <div className={s.box}>
-        <div className={s.img}>
+        <Link to={`/perfumeInfo/${props.id}`}><div className={s.img}>
             <img src={props.imageUrl}></img>
-        </div>
+        </div></Link>
         <div className={s.title}>{props.title}</div>
         <div className={s.type}>
             {props.types == 0 ? 'Original' : 'Tester'}

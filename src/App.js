@@ -5,6 +5,7 @@ import React, { createContext, useState } from 'react';
 import './App.css';
 import './scss/app.scss';
 import { Route, Routes } from 'react-router-dom';
+import PerfumeInfo from './components/PerfumeInfo/PerfumeInfo';
 
 export const SearchContext = createContext('');
 const App = () => {
@@ -17,6 +18,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home />}></Route>
           <Route path="/cart" element={<Cart />}></Route>
+          <Route path="/perfumeInfo/:id" element={<PerfumeInfo />}></Route>
         </Routes>
       </div>
     </SearchContext.Provider>
